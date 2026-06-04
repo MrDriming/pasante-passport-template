@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Generador de Memes</h1>
+
+  <div class="controls">
+    <input type="text" id="imageUrl" placeholder="URL de la imagen">
+
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <input type="text" id="topText" placeholder="Texto superior">
+
+    <input type="text" id="bottomText" placeholder="Texto inferior">
+
+    <button id="addTextBtn">Agregar texto</button>
+
+    <div id="extraInputs"></div>
+
+    <button id="downloadBtn">Descargar Meme</button>
+  </div>
+
+  <div class="templates">
+    <button data-url="https://i.imgflip.com/30b1gx.jpg">Drake</button>
+    <button data-url="https://i.imgflip.com/1ur9b0.jpg">Distracted Boyfriend</button>
+    <button data-url="https://i.imgflip.com/1g8my4.jpg">Two Buttons</button>
+  </div>
+
+  <div class="meme-container" id="meme">
+    <img
+  id="memeImage"
+  crossorigin="anonymous"
+  src=""
+  alt="Meme"
+/>
+
+    <div class="meme-text top" id="topPreview"></div>
+
+    <div class="meme-text bottom" id="bottomPreview"></div>
+    
+  </div>
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
